@@ -1,4 +1,4 @@
-package com.example.ginz.transfervoicetogoolge;
+package com.powerranger.ginz.transfervoicetogoolge;
 
 import android.content.Context;
 import android.view.LayoutInflater;

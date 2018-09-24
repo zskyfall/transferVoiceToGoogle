@@ -22,6 +22,8 @@
         android:layout_toRightOf="@+id/image_flag"
         android:layout_centerVertical="true"
         android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
         />
 </RelativeLayout>

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/main_gradient_background"
     tools:context=".MainActivity">
 
     <Spinner
@@ -20,7 +22,7 @@
         android:id="@+id/button_speak"
         android:layout_width="@dimen/dp_60"
         android:layout_height="@dimen/dp_60"
-        android:background="@drawable/voice_recognization"
+        android:background="@mipmap/ic_recognizer"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/dp_5"
@@ -31,6 +33,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_speak"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_18"
         />
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,12 +53,22 @@
             android:id="@+id/btnRepeat"
             android:layout_width="@dimen/dp_60"
             android:layout_height="@dimen/dp_60"
+            android:background="@mipmap/ic_repeat"
             />
-        <Button
-            android:id="@+id/btnStop"
-            android:layout_width="@dimen/dp_60"
-            android:layout_height="@dimen/dp_60"/>
+
 
     </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-2117205316433633/6739067622">
+    </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package com.example.ginz.transfervoicetogoolge;
+package com.powerranger.ginz.transfervoicetogoolge;
 
 public class Language {
     private Integer flag;
